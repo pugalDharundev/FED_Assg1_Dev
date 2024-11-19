@@ -1,0 +1,135 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecd36e; 
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    width: 100%;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links li {
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+.nav-links li:hover {
+    color: #f4a261; 
+}
+
+
+.logo {
+    position: relative;
+    margin-left:auto;
+    transform: translateX(-50%); 
+    color: #050101; 
+    font-size: 2rem; 
+    display: flex;
+    font-family: 'Lilita One', cursive;
+    white-space: nowrap;
+    margin-right: 20vw;
+}
+
+
+.nav-account {
+    display: flex;
+    align-items: center; 
+    list-style: none;
+    gap: 2rem; 
+}
+
+.profile {
+    display: flex;
+    align-items: center; 
+    gap: 0.5rem;
+}
+
+.profile img {
+    height: 25px;
+    width: 25px;
+}
+
+.shopping-cart img {
+    height: 25px; 
+    width: 25px;
+}
+
+
+.ice-cream {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    text-align: center; 
+    gap: 1rem; 
+}
+
+.ice-cream img {
+    width: 20vw; 
+    height: auto; 
+    margin-top: 70px;
+}
+
+.shop-now {
+    background-color: #000000; 
+    color: #fff; 
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px; 
+    text-decoration: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.shop-now:hover {
+    background-color: #e86011; 
+    transform: scale(1.1);
+}
+
+.shop-now:active {
+    transform: scale(1); 
+}
+
+.big-text {
+    position:absolute;
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #ffffff; 
+    margin: 1rem 0; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+.ice-text {
+    position: absolute;
+    margin-top: 200px;
+    font-size: 10rem;
+    font-family: "Lilita One";
+    font-weight: bold ;
+    color: white;
+    letter-spacing: 2px;
+}
