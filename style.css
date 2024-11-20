@@ -3,133 +3,473 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
+   }
+   
+   body {
     font-family: 'Arial', sans-serif;
-    background-color: #ecd36e; 
-}
-.nav-container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 1rem 4rem;
-    background-color: #ffffff; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative; 
+    background-color: #ecd36e;
+   }
+   
+   .nav-container {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
     width: 100%;
-}
-
-
-.nav-links {
+    padding: 1rem;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   
+   .nav-links {
     list-style: none;
-    gap: 2rem;
-}
-
-.nav-links li {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+   }
+   
+   .nav-links li {
     color: #333;
     cursor: pointer;
-    transition: color 0.3s ease; 
-}
-
-.nav-links li:hover {
-    color: #f4a261; 
-}
-
-
-.logo {
+    transition: color 0.3s ease;
+   }
+   
+   .nav-links li:hover {
+    color: #f4a261;
+   }
+   
+   .logo {
     position: relative;
-    margin-left:auto;
-    transform: translateX(-50%); 
-    color: #050101; 
-    font-size: 2rem; 
-    display: flex;
+    color: #050101;
+    font-size: 1.5rem;
     font-family: 'Lilita One', cursive;
     white-space: nowrap;
-    margin-right: 20vw;
-}
-
-
-.nav-account {
+    margin-right: 10vw;
+   }
+   
+   .nav-account {
     display: flex;
-    align-items: center; 
+    align-items: center;
     list-style: none;
-    gap: 2rem; 
-}
-
-.profile {
+    gap: 1rem;
+    font-size: 0.9rem;
+   }
+   
+   .profile {
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 0.5rem;
-}
-
-.profile img {
-    height: 25px;
-    width: 25px;
-}
-
-.shopping-cart img {
-    height: 25px; 
-    width: 25px;
-}
-
-
-.ice-cream {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    height: 100vh; 
-    text-align: center; 
-    gap: 1rem; 
-}
-
-.ice-cream img {
-    width: 20vw; 
-    height: auto; 
+   }
+   
+   .profile img,
+   .shopping-cart img {
+    height: 20px;
+    width: 20px;
+   }
+   
+   .ice-cream {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    gap: 0.8rem;
+   }
+   
+   .ice-cream img {
+    width: 20vw;
+    height: auto;
     margin-top: 70px;
-}
-
-.shop-now {
-    background-color: #000000; 
-    color: #fff; 
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
+   }
+   
+   .shop-now {
+    margin-top: 450px;
+    border: solid #050101;
+    border-width: 3px;
+    color: #000000;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    border-radius: 50px; 
-    text-decoration: none; 
+    border-radius: 0px;
+    text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.3s; 
-}
-
-.shop-now:hover {
-    background-color: #e86011; 
-    transform: scale(1.1);
-}
-
-.shop-now:active {
-    transform: scale(1); 
-}
-
-.big-text {
+    transition: background-color 0.3s, transform 0.3s;
     position:absolute;
-    font-size: 2.5rem; 
+   }
+   
+   .shop-now:hover {
+    background-color: #000000;
+    color: white;
+    transform: scale(1.1);
+   }
+   
+   .shop-now:active {
+    transform: scale(1);
+   }
+   
+   .big-text {
+    position: absolute;
+    font-size: 2rem;
     font-weight: bold;
-    color: #ffffff; 
-    margin: 1rem 0; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
+    top: 23vw;
+    color: #ffffff;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   }
+   
+   .ice-text {
+    position: absolute;
+    margin-top: 180px;
+    font-size: 6rem;
+    font-family: "Lilita One";
+    font-weight: bold;
+    color: white;
+    top: 16vw;
+    letter-spacing: 2px;
+   }
+
+.coupon-card-1 .coupon-card-front {
+    background-color: #C39A6E; /* Light Brown (Chocolate) */
 }
 
-.ice-text {
-    position: absolute;
-    margin-top: 200px;
-    font-size: 10rem;
-    font-family: "Lilita One";
-    font-weight: bold ;
-    color: white;
-    letter-spacing: 2px;
+.coupon-card-2 .coupon-card-front {
+    background-color: #F0E1A1; /* Creamy Yellow (Vanilla) */
 }
+
+.coupon-card-3 .coupon-card-front {
+    background-color: #F4A1B2; /* Soft Pink (Strawberry) */
+}
+
+.coupon-card-4 .coupon-card-front {
+    background-color: #A8D5BA; /* Soft Green (Mint) */
+}
+
+.coupon-card-5 .coupon-card-front {
+    background-color: #F7C8A6; /* Light Peach (Mango) */
+}
+
+.coupon-card-6 .coupon-card-front {
+    background-color: #F1D1B5; /* Warm Peach (Peach) */
+}
+
+   .coupon-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for horizontal layout */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    max-width: 100%; /* Ensure container doesn't overflow */
+    margin: 0 auto; /* Ensure the container is centered */
+}
+
+/* Container for each card to handle flip effect */
+.coupon-card {
+    width: 100%; /* Make the card take full width of its grid cell */
+    height: 350px;
+    perspective: 1000px; /* Set the perspective to allow 3D effect */
+}
+
+.coupon-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Ensure 3D effect is applied to inner content */
+    transition: transform 0.6s; /* Smooth flip transition */
+}
+
+.coupon-card:hover .coupon-card-inner {
+    transform: rotateY(180deg); /* Flip the card when hovered */
+}
+
+/* Front of the coupon card (Scoops & Shakes) */
+.coupon-card-front, .coupon-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side when flipped */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coupon-card-front {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+.coupon-card-back {
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
+    transform: rotateY(180deg); /* Flip the back side */
+    text-align: center;
+}
+
+/* Styling for the coupon code and description */
+.coupon-card h3, .coupon-card h4 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.coupon-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.main-circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 15px solid #f67aea;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.main-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bubble {
+  background-color: #FFD5A5;
+  padding: 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.bubble p {
+  margin: 0;
+  font-size: 12px;
+  color: #000;
+}
+
+.bubble .psst {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bubble .click-here {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.bubble:hover {
+  cursor: pointer;
+  background-color: #FFB870;
+  transition: background-color 0.3s ease;
+}
+
+.chocolate {
+  width: 4vw;
+  height: auto;
+  margin: 2vw;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#desert {
+  background-image: url("Images/raspbery.jpg");
+}
+
+.content {
+  padding-top: 50vh;
+  text-align: center;
+  color: #ddd;
+  font-size: 3vw;
+}
+   
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .coupon-container {
+        grid-template-columns: 1fr 1fr; /* 2 columns for medium screens */
+    }
+}
+   
+   @media (max-width: 768px) {
+    .nav-container {
+      padding: 0.8rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+   
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      font-size: 0.8rem;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+   
+    .nav-links.show {
+      display: flex;
+    }
+   
+    .logo {
+      font-size: 1.2rem;
+      margin-right: 0;
+    }
+   
+    .nav-account {
+      font-size: 0.8rem;
+      gap: 0.8rem;
+    }
+   
+    .profile img,
+    .shopping-cart img {
+      height: 18px;
+      width: 18px;
+    }
+   
+    .ice-cream img {
+      width: 80vw;
+      margin-top: 50px;
+    }
+   
+    .shop-now {
+      margin-top: 80px;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+    }
+   
+    .big-text {
+      font-size: 1.6rem;
+    }
+   
+    .ice-text {
+      margin-top: 150px;
+      font-size: 4rem;
+    }
+   
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      position: relative;
+    }
+   
+    .hamburger span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: #333;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+    }
+   
+    .hamburger span:nth-child(1) {
+      top: 0px;
+    }
+   
+    .hamburger span:nth-child(2),
+    .hamburger span:nth-child(3) {
+      top: 10px;
+    }
+   
+    .hamburger span:nth-child(4) {
+      top: 20px;
+    }
+   
+    .hamburger.open span:nth-child(1) {
+      top: 10px;
+      width: 0%;
+      left: 50%;
+    }
+   
+    .hamburger.open span:nth-child(2) {
+      transform: rotate(45deg);
+    }
+   
+    .hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+   
+    .hamburger.open span:nth-child(4) {
+      top: 10px;
+      width: 0%;
+      left: 50%;
+    }
+   }
+   
+   @media (max-width: 480px) {
+    .nav-links {
+      font-size: 0.7rem;
+      gap: 0.6rem;
+    }
+   
+    .logo {
+      font-size: 1rem;
+    }
+   
+    .nav-account {
+      font-size: 0.7rem;
+      gap: 0.6rem;
+    }
+   
+    .profile img,
+    .shopping-cart img {
+      height: 16px;
+      width: 16px;
+    }
+   
+    .ice-cream img {
+      width: 90vw;
+      margin-top: 40px;
+    }
+   
+    .shop-now {
+      margin-top: 60px;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+   
+    .big-text {
+      font-size: 1.4rem;
+    }
+   
+    .ice-text {
+      margin-top: 120px;
+      font-size: 3.5rem;
+    }
+   }
