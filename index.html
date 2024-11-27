@@ -1,60 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage - Cart Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <script src="home.js"></script>
+
     <nav class="nav-container">
         <ul class="nav-links">
-            <li>
-                Home
-            </li>
-            <li>
-                Flavours
-            </li>
-            <li>
-                Menu
-            </li>
-            <li>
-                About Us
-            </li>
-            <li>
-                Coupons
-            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavours.html">Flavor</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="coupons.html">Coupons</a></li>
         </ul>
-        <h1 class="logo">
-            Scoops & Shakes 
-        </h1>
+        <h1 class="logo">Scoops & Shakes</h1>
         <ul class="nav-account">
             <li class="profile">
                 <img src="Images/profile-user.png" alt="Profile Icon">
-                Log in
+                <a href="login.html">Log in</a>
             </li>
             <li class="shopping-cart">
                 <img src="Images/shopping-cart.png" alt="Shopping Cart">
+                <span id="cart-count"></span>
             </li>
         </ul>
     </nav>
+
     <div class="ice-cream">
         <img src="Images/ice-cream.png" alt="Ice Cream">
         <h2 class="big-text">Dairy-Free</h2>
         <h3 class="ice-text">ICE CREAM</h3>
-        <a href="#" class="shop-now">Shop Now </a>
+        <a href="menu.html" class="shop-now">Shop Now</a>
     </div>
+
+    <div class="flavors-container">
+        <div class="flavors-left">
+            <img src="Images/Ice-cream-sundae-hero-11.jpg" alt="Ice Cream">
+        </div>
+        <div class="flavors-right">
+            <h2>OUR FLAVORS</h2>
+            <h3>Fresh n' Tasty!</h3>
+            <p>At Scoops & Shakes , we craft each of our ice cream flavors with care, using only the finest ingredients sourced locally for ultimate freshness. From classic flavors like creamy vanilla and rich chocolate to exciting, one-of-a-kind creations like salted caramel swirl and berry cheesecake, there's something to satisfy every craving. We pride ourselves on offering both timeless favorites and seasonal specials, ensuring that every visit brings something new to try. Every scoop is a perfect balance of flavor, creaminess, and joy, made to delight your taste buds with every bite.
+            <a href="flavours.html" class="our-fla-btn">Our Flavours</a>
+            </p>
+        </div>
+    </div>
+
     <div class="parallax" id="desert">
         <div class="content">
-            <h1>
-                Simply Irresistible
-            </h1>
+            <h1>Simply Irresistible</h1>
+        </div>
+    </div>
 
+    <!-- Menu Items -->
+<footer class="footer">
+        <div class="footer-container">
+            <!-- Address Section -->
+            <div class="footer-section">
+                <h4>ADDRESS</h4>
+                <p>Singapore, Bukit Batok<br>St 72, Ave 3, SG 94158</p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h4>CONTACT</h4>
+                <p>Scoops@Shakes.com<br>Tel: 123-456-7890</p>
+            </div>
+
+            <!-- Hours Section -->
+            <div class="footer-section">
+                <h4>HOURS</h4>
+                <p>OPEN DAILY<br>10AM-10PM</p>
+            </div>
+
+            <!-- Mailing List Section -->
+            <div class="footer-section mailing-list">
+                <h4>MAILING LIST</h4>
+                <form>
+                    <label for="email">Enter your email here *</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    <div>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Yes, subscribe me to your newsletter.</label>
+                    </div>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
         </div>
 
-    </div>
+        <!-- Footer Bottom with Social Media -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="Images/download (14).png" alt="Facebook Icon">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <img src="Images/png-clipart-icon-logo-twitter-logo-twitter-logo-blue-social-media-thumbnail.png" alt="Twitter Icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="Images/Vector-Instagram-icon-PNG.png" alt="Instagram Icon">
+            </a>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="cart.js"></script>
 </body>
+
 </html>

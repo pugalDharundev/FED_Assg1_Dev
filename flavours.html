@@ -13,19 +13,19 @@
     <nav class="nav-container">
         <ul class="nav-links">
             <li>
-                Home
+                <a href="index.html">Home</a>
             </li>
             <li>
-                Flavours
+                <a href="flavours.html">Flavor</a>
             </li>
             <li>
-                Menu
+                <a href="menu.html">Menu</a>
             </li>
             <li>
-                About Us
+                <a href="aboutus.html">About Us</a>
             </li>
             <li>
-                Coupons
+                <a href="coupons.html">Coupons</a>
             </li>
         </ul>
         <h1 class="logo">
@@ -34,10 +34,11 @@
         <ul class="nav-account">
             <li class="profile">
                 <img src="Images/profile-user.png" alt="Profile Icon">
-                Log in
+                <a href="login.html">Log In</a>
             </li>
             <li class="shopping-cart">
                 <img src="Images/shopping-cart.png" alt="Shopping Cart">
+                <span id="cart-count"></span>
             </li>
         </ul>
     </nav>
@@ -93,50 +94,107 @@
                 <p class="price">$7.50</p>
             </div>
 
+             <!-- Flavor 7 -->
             <div class="flavor-item">
-                <img src="images/caramel-crunch.png" alt="Caramel Crunch" class="flavor-image">
-                <h3>Caramel Crunch</h3>
-                <p>Rich caramel with crispy, crunchy bits.</p>
+                <img src="images/velvet.mango.png" alt="Caramel Crunch" class="flavor-image">
+                <h3>Velvet Mango</h3>
+                <p>Creamy, rich mango dessert with tropical sweetness.</p>
                 <p class="price">$7.50</p>
             </div>
 
+             <!-- Flavor 8 -->
             <div class="flavor-item">
-                <img src="images/caramel-crunch.png" alt="Caramel Crunch" class="flavor-image">
-                <h3>Caramel Crunch</h3>
-                <p>Rich caramel with crispy, crunchy bits.</p>
+                <img src="images/tiramisu.png" alt="Caramel Crunch" class="flavor-image">
+                <h3>Tiramisu Spiral</h3>
+                <p>Swirled coffee and mascarpone delight with a hint of cocoa.</p>
                 <p class="price">$7.50</p>
             </div>
 
+             <!-- Flavor 9 -->
             <div class="flavor-item">
-                <img src="images/caramel-crunch.png" alt="Caramel Crunch" class="flavor-image">
-                <h3>Caramel Crunch</h3>
-                <p>Rich caramel with crispy, crunchy bits.</p>
+                <img src="images/mango.sorbet.png" alt="Caramel Crunch" class="flavor-image">
+                <h3>Mango Sorbet</h3>
+                <p>A refreshing, fruity treat with the sweet and tangy taste of ripe mangoes.</p>
                 <p class="price">$7.50</p>
             </div>
 
+             <!-- Flavor 10 -->
             <div class="flavor-item">
-                <img src="images/caramel-crunch.png" alt="Caramel Crunch" class="flavor-image">
-                <h3>Caramel Crunch</h3>
-                <p>Rich caramel with crispy, crunchy bits.</p>
+                <img src="images/raspberry.sorbet.png" alt="Caramel Crunch" class="flavor-image">
+                <h3>Mixed Berries</h3>
+                <p>A refreshing blend of sweet and tart berries, delivering a burst of fruity flavor in every bite.</p>
                 <p class="price">$7.50</p>
             </div>
 
+             <!-- Flavor 11 -->
             <div class="flavor-item">
-                <img src="images/caramel-crunch.png" alt="Caramel Crunch" class="flavor-image">
-                <h3>Caramel Crunch</h3>
-                <p>Rich caramel with crispy, crunchy bits.</p>
+                <img src="images/belgian.chocolate.png" alt="Caramel Crunch" class="flavor-image">
+                <h3>Belgian Chocolate</h3>
+                <p>A rich and creamy dessert with the deep, smooth flavor of premium Belgian chocolate.</p>
                 <p class="price">$7.50</p>
             </div>
 
+             <!-- Flavor 12 -->
             <div class="flavor-item">
-                <img src="images/caramel-crunch.png" alt="Caramel Crunch" class="flavor-image">
-                <h3>Caramel Crunch</h3>
-                <p>Rich caramel with crispy, crunchy bits.</p>
+                <img src="images/coffee.toffee.png" alt="Caramel Crunch" class="flavor-image">
+                <h3>Coffee Toffee</h3>
+                <p>A deliciously indulgent treat combining the boldness of coffee with the sweetness of toffee.</p>
                 <p class="price">$7.50</p>
             </div>
 
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Address Section -->
+          <div class="footer-section">
+            <h4>ADDRESS</h4>
+            <p>Singapore , Bukit Batok<br>St 72 , Ave 3 , SG 94158</p>
+          </div>
+      
+          <!-- Contact Section -->
+          <div class="footer-section">
+            <h4>CONTACT</h4>
+            <p>Scoops@Shakes.com<br>Tel: 123-456-7890</p>
+          </div>
+      
+          <!-- Hours Section -->
+          <div class="footer-section">
+            <h4>HOURS</h4>
+            <p>OPEN DAILY<br>10AM-10PM</p>
+          </div>
+      
+          <!-- Mailing List Section -->
+          <div class="footer-section mailing-list">
+            <h4>MAILING LIST</h4>
+            <form>
+              <label for="email">Enter your email here *</label>
+              <input type="email" id="email" name="email" placeholder="Your email address" required>
+              <div>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Yes, subscribe me to your newsletter.</label>
+              </div>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      
+        <!-- Footer Bottom with Social Media -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+              <img src="Images/download (14).png" alt="Facebook Icon">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+              <img src="Images/png-clipart-icon-logo-twitter-logo-twitter-logo-blue-social-media-thumbnail.png" alt="Twitter Icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+              <img src="Images/Vector-Instagram-icon-PNG.png" alt="Instagram Icon">
+            </a>
+          </div>
+
+          <script src="menu.js"></script>
+    <script src="cart.js"></script>
       
 </body>
+<html>

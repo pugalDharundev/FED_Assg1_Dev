@@ -7,7 +7,7 @@
    
    body {
     font-family: 'Arial', sans-serif;
-    background-color: #ecd36e;
+    background-color: #ebcb4b;
    }
    
    .background-colour {
@@ -32,13 +32,14 @@
     font-size: 0.9rem;
    }
    
-   .nav-links li {
+   .nav-links li a {
     color: #333;
     cursor: pointer;
     transition: color 0.3s ease;
+    text-decoration: none;
    }
    
-   .nav-links li:hover {
+   .nav-links li a:hover {
     color: #f4a261;
    }
    
@@ -64,7 +65,16 @@
     align-items: center;
     gap: 0.5rem;
    }
-   
+
+   .profile a {
+    text-decoration: none;
+    color: black;
+   }
+
+   .profile a:hover {
+    color: #f4a261;
+   }
+
    .profile img,
    .shopping-cart img {
     height: 20px;
@@ -112,6 +122,21 @@
    .shop-now:active {
     transform: scale(1);
    }
+
+   .our-fla-btn {
+    border: solid #050101;
+    color: #000;
+   }
+
+   .our-fla-btn:hover {
+    background-color: #000000;
+    color: white;
+    transform: scale(1.1);
+   }
+   
+   .our-fla-btn:active {
+    transform: scale(1);
+   }
    
    .big-text {
     position: absolute;
@@ -134,6 +159,104 @@
     top: 16vw;
     letter-spacing: 2px;
    }
+
+   .flavors-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Align both sections to stretch to the same height */
+    background-color: white;
+    margin-top: 20px;
+    height: 700px; /* Set a consistent height for the container */
+    overflow: hidden; /* Prevent image from exceeding the container */
+    border: 2px solid #e0e0e0; /* Optional: Add a subtle border for emphasis */
+}
+
+.flavors-left, .flavors-right {
+    flex: 0.5; /* Ensure both sections take up half the width */
+    height: 100%; /* Match the height of the container */
+    overflow: hidden; /* Prevent any content overflow */
+}
+
+.flavors-left img {
+    width: 100%; /* Ensure the image fits the container width */
+    height: 100%; /* Ensure the image fits the container height */
+    object-fit: cover; /* Crop and scale the image to fill its container */
+}
+
+.flavors-right {
+    text-align: left;
+    padding: 40px; /* Add padding for text spacing */
+}
+
+.flavors-right h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.flavors-right p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.flavors-right a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.flavors-right a:hover {
+    background-color: #ff3b3b;
+}
+
+/* Overall Section Layout */
+.circle-text-section {
+  display: flex;                     /* Flexbox layout for side-by-side display */
+  align-items: center;               /* Vertically center the items */
+  margin: 20px;                      /* Add margin for spacing */
+}
+
+/* Circle containing the Image */
+.circle-container {
+  width: 300px;                      /* Set the size of the circle */
+  height: 300px;                     /* Set the size of the circle */
+  border-radius: 50%;                /* Makes the container a perfect circle */
+  overflow: hidden;                  /* Hide the overflow part of the image */
+  margin-right: 20px;                /* Space between the circle and the text */
+}
+
+.circle-image {
+  width: 100%;                       /* Make the image fill the container */
+  height: 100%;                      /* Make the image fill the container */
+  object-fit: cover;                 /* Ensure the image covers the circle without distortion */
+}
+
+/* White Rectangle with Text */
+.text-container {
+  background-color: white;          /* White background for the rectangle */
+  padding: 20px;                     /* Padding inside the rectangle */
+  border: 1px solid #ddd;           /* Optional: Add a border around the rectangle */
+  width: 100%;                       /* Make the rectangle take the remaining space */
+  max-width: 600px;                  /* Optional: Set a maximum width for the rectangle */
+}
+
+.text-container h2 {
+  margin-top: 0;                     /* Remove top margin for the heading */
+  font-size: 1.5rem;                 /* Adjust font size for the title */
+  color: #333;                       /* Set a dark color for the title */
+}
+
+.text-container p {
+  font-size: 1rem;                   /* Adjust font size for the paragraph */
+  color: #555;                       /* Set a lighter color for the text */
+  line-height: 1.6;                  /* Line height for readability */
+}
+
 
 .coupon-card-1 .coupon-card-front {
     background-color: #C39A6E; /* Light Brown (Chocolate) */
@@ -247,69 +370,6 @@
     margin-bottom: 10px;
 }
 
-.about-us-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1px;
-  width: 100%;
-  margin-top: 30px;
-}
-
-.main-circle {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  border: 15px solid #f67aea;
-  overflow: hidden;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.main-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.bubble {
-  background-color: #FFD5A5;
-  padding: 20px;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-shrink: 0;
-}
-
-.bubble p {
-  margin: 0;
-  font-size: 16px;
-  color: #000;
-}
-
-.bubble .psst {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.bubble .click-here {
-  font-size: 14px;
-  margin-top: 10px;
-  color: #333;
-}
-
-.bubble:hover {
-  cursor: pointer;
-  background-color: #FFB870;
-  transition: background-color 0.3s ease;
-}
-
 .chocolate {
   width: 4.5vw;
   height: auto;
@@ -366,16 +426,19 @@
 }
 
 .parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background-attachment: fixed;  /* This is key for the parallax effect */
+  background-position: center;  /* Centers the background image */
+  background-repeat: no-repeat;  /* Ensures the image doesn't repeat */
+  background-size: cover;  /* Ensures the image covers the entire container */
+  height: 100vh;  /* Sets the height of the parallax section to the full viewport height */
 }
 
+/* Parallax Background Image */
 #desert {
-  background-image: url("Images/1-3e857840.jpg");
+  background-image: url("Images/1-3e857840.jpg");  /* Path to the background image */
+  background-size: 1400px 1100px;
 }
+
 
 .content {
   padding-top: 50vh;
@@ -513,7 +576,6 @@ p {
 }
 
 
-
 * {
   margin: 0;
   padding: 0;
@@ -524,14 +586,16 @@ p {
   font-size: 1.5rem;
   font-family: 'Lilita One', cursive;
   font-weight: 700;
-  color: #333;
+  color: #000000;
   display: flex; /* Use flexbox for centering */
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
-  
-
 }
 
+.nav-bar a {
+  text-decoration: none;
+  color: #000;
+}
 
 /* Login Container */
 .login-container {
@@ -614,11 +678,17 @@ img + p {
 
 }
 
+.alignment-container {
+  max-width: 90%; 
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
 /* Order Section Styles */
 .order-section {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 40px 0 40px 40px;
+  max-width: 1000px;
+  margin: 0 auto 0px
 }
 
 .order-title {
@@ -626,16 +696,19 @@ img + p {
   font-size: 3.5rem;
   color: #333;
   margin-bottom: 20px;
+  
 }
 
 .order-description {
   font-size: 1.1rem;
   color: #666;
   margin-bottom: 30px;
+ 
 }
 
 .order-status {
   margin-bottom: 30px;
+ 
 }
 
 .status-indicator {
@@ -660,6 +733,7 @@ img + p {
   display: flex;
   gap: 2px;
   margin-bottom: 30px;
+  
 }
 
 .order-option {
@@ -668,15 +742,18 @@ img + p {
   border: none;
   background-color: #f5f5f5;
   cursor: pointer;
+  border: 1.5px solid black;
   transition: background-color 0.3s;
 }
 
 .order-option.active {
-  background-color: #fff;
+  background-color: #ffffff;
+  border: 1.5px solid black;
 }
 
 .order-details {
   margin-bottom: 40px;
+
 }
 
 .pickup-time, .pickup-location {
@@ -739,6 +816,287 @@ img + p {
   margin-bottom: 30px;
 }
 
+.ice-cream-flavour-1 {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.flavors-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.flavor-item-1 {
+  background: white;
+  padding: 2.5rem;
+  position: relative;
+  border: 1.5px solid #050505;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;  /* Fixed height for all boxes */
+  box-sizing: border-box;  /* Ensures padding doesn't increase box size */
+  overflow: hidden;  /* Prevents content from spilling out */
+}
+
+.content-wrapper-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.flavor-title-1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.description-1 {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.price-1 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.flavor-image-1 {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 2rem;
+}
+
+/* Footer Styling */
+/* Footer Styling */
+
+/* Footer Styling */
+.footer {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.mailing-list form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mailing-list input[type="email"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mailing-list input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.mailing-list button {
+  padding: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mailing-list button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  width: 40px; /* Adjust the size of your icons */
+  height: 40px;
+  border-radius: 50%; /* Make them circular */
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+.add-to-cart-btn {
+  display: block;
+  margin: 10px auto 0;
+  margin-left: 1px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e55b00;
+}
+
+.add-to-cart-btn:focus {
+  outline: none;
+  box-shadow: 0 0 4px #f5e1d4;
+}
+
+#cart-count {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red; /* Red background for the cart number */
+  color: white; /* White text color */
+  font-size: 11.5px; /* Size of the number */
+  width: 16px; /* Width of the circle */
+  height: 16px; /* Height of the circle */
+  border-radius: 50%; /* Make it round */
+  text-align: center; /* Center the text inside the circle */
+  line-height: 15px; /* Align the number vertically in the circle */
+  font-weight: bold; /* Make the number bold */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a small shadow for better visibility */
+  display: block;
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cart-container {
+  background-color: white;
+  width: 500px;
+  max-height: 80vh;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.close-cart {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-items {
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-btn {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
 
 
 /* Responsive Design */
@@ -930,3 +1288,5 @@ img + p {
       font-size: 3.5rem;
     }
    }
+
+   /* Cart Overlay Styles */
