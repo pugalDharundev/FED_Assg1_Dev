@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavours.html">Flavors</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="coupons.html">Coupons</a></li>
+        </ul>
+        <h1 class="logo">Scoops & Shakes</h1>
+    </nav>
+
+    <section class="flavor-detail-section">
+        <div class="flavor-container">
+            <img id="flavor-image" src="" alt="Flavor Image">
+            <div class="flavor-details">
+                <h1 id="flavor-name"></h1>
+                <p id="flavor-description"></p>
+                <p id="flavor-price"></p>
+                <h3>Reviews</h3>
+                <ul id="flavor-reviews">
+                    <!-- Reviews will be dynamically populated here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Address Section -->
+          <div class="footer-section">
+            <h4>ADDRESS</h4>
+            <p>Singapore , Bukit Batok<br>St 72 , Ave 3 , SG 94158</p>
+          </div>
+      
+          <!-- Contact Section -->
+          <div class="footer-section">
+            <h4>CONTACT</h4>
+            <p>Scoops@Shakes.com<br>Tel: 123-456-7890</p>
+          </div>
+      
+          <!-- Hours Section -->
+          <div class="footer-section">
+            <h4>HOURS</h4>
+            <p>OPEN DAILY<br>10AM-10PM</p>
+          </div>
+      
+          <!-- Mailing List Section -->
+          <div class="footer-section mailing-list">
+            <h4>MAILING LIST</h4>
+            <form>
+              <label for="email">Enter your email here *</label>
+              <input type="email" id="email" name="email" placeholder="Your email address" required>
+              <div>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Yes, subscribe me to your newsletter.</label>
+              </div>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      
+        <!-- Footer Bottom with Social Media -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+              <img src="Images/download (14).png" alt="Facebook Icon">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+              <img src="Images/png-clipart-icon-logo-twitter-logo-twitter-logo-blue-social-media-thumbnail.png" alt="Twitter Icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+              <img src="Images/Vector-Instagram-icon-PNG.png" alt="Instagram Icon">
+            </a>
+          </div>
+
+    <script src="menu.js"></script>
+    <script src="cart.js"></script>
+    <script src="flavours.js"></script>
+
+    <script src="flavour-details.js"></script>
+</body>
+</html>
