@@ -12,20 +12,23 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="nav-container">
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <h1 class="nav-bar"><a href="index.html">Scoops & Shakes</a></h1>
     </nav>
 
     <!-- Login Section -->
     <div class="login-container">
-        <form class="login-form">
+        <form class="login-form" id="login-form">
             <h2 class="login-title">Login</h2>
-            <input class="form-input" type="email" placeholder="Email" required>
-            <input class="form-input" type="password" placeholder="Password" required>
+            <input class="form-input" type="email" id="email" placeholder="Email" required>
+            <input class="form-input" type="password" id="password" placeholder="Password" required>
             <button class="form-button" type="submit">Sign In</button>
             <div class="form-links">
-                <a href="#" class="link">Create Account</a>
-                <span> • </span>
-                <a href="#" class="link">Forgot Password</a>
             </div>
         </form>
     </div>
@@ -77,5 +80,11 @@
               <img src="Images/Vector-Instagram-icon-PNG.png" alt="Instagram Icon">
             </a>
           </div>
+          <script src="login.js"></script>
+          <script>
+            function toggleMenu() {
+                document.querySelector('.nav-links').classList.toggle('show');
+            }
+        </script>
 </body>
 </html>

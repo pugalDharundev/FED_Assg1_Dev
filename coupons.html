@@ -11,6 +11,12 @@
 </head>
 <body>
     <nav class="nav-container">
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul class="nav-links">
             <li>
                 <a href="index.html">Home</a>
@@ -54,7 +60,7 @@
             </div>
             <div class="coupon-card-back">
                 <h4>Coupon Code: SAVE20</h4>
-                <p>20 dollars off your next purchase</p>
+                <p>2 dollars off your next purchase</p>
                 <p>Expires: Dec 31, 2024</p>
                 
             </div>
@@ -72,7 +78,7 @@
             </div>
             <div class="coupon-card-back">
                 <h4>Coupon Code: X87890C</h4>
-                <p>10 Dollars off your next purchase</p>
+                <p>1 Dollar off your next purchase</p>
                 <p>Expires: Jan 31, 2025</p>
             </div>
         </div>
@@ -89,7 +95,7 @@
             </div>
             <div class="coupon-card-back">
                 <h4>Coupon Code: WELCOME10</h4>
-                <p>10 dollars off your first order.</p>
+                <p>1 dollar off your first order.</p>
                 <p>Expires: Feb 28, 2025</p>
             </div>
         </div>
@@ -139,7 +145,7 @@
                 <img src="Images/peach.png" alt="peach" class="peach">
             </div>
             <div class="coupon-card-back">
-                <h4>Coupon Code: SPRINGSALE</h4>
+                <h4>Coupon Code: SpringSale</h4>
                 <p>$2 dollars off your next purchase</p>
                 <p>Expires: April 30, 2025</p>
             </div>
@@ -246,5 +252,10 @@
       </div>
 <script src="menu.js"></script>
 <script src="cart.js"></script>
+<script>
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('show');
+    }
+</script>
 </body>
 </html>

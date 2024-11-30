@@ -184,7 +184,7 @@
     font-size: 1.2rem;
     line-height: 1.8;
     margin-top: 80px;
-    font-family: "Lilita One";
+    font-family:'lilita One';
     color: #484646;
 }
 
@@ -505,18 +505,31 @@
 
 /* Parallax Background Image */
 #desert {
-  background-image: url("Images/Assorted ice cream flavors on dark background for summer menu _ Premium AI-generated image.jpeg");  /* Path to the background image */
-  background-size: 1300px 1000px;
+  background-image: url("Images/pexels-goumbik-1352296.jpg");  /* Path to the background image */
+  
+  object-fit: cover;
   
 }
 
-
 .content {
-  padding-top: 50vh;
+  padding-top: 45vh;
+  padding-left: 9vh;
   text-align: center;
+  position: relative;
   color: #ddd;
   font-size: 3vw;
 }
+
+.content h1 {
+  color: #ffffff; /* White text for contrast */
+  font-size: 5rem; /* Adjust font size as needed */
+  font-weight: bold;
+  text-shadow: 3px 5px 8px rgba(0, 0, 0, 0.7); /* Add depth to text */
+  padding: 20px 40px; /* Add padding around text */
+  border-radius: 10px; /* Smooth corners for the text box */
+  display: inline-block; /* Ensures proper text box alignment */
+}
+
 
 .top-image {
   position: relative;
@@ -895,6 +908,20 @@ img + p {
   margin: 0 auto;
 }
 
+.dairy-free-flavour-1 {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.top-flavour-1 {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .flavors-grid-1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -914,6 +941,20 @@ img + p {
   box-sizing: border-box;  /* Ensures padding doesn't increase box size */
   overflow: hidden;  /* Prevents content from spilling out */
 }
+
+.dairy-free-item-1 {
+  background: white;
+  padding: 2.5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;  /* Fixed height for all boxes */
+  box-sizing: border-box;  /* Ensures padding doesn't increase box size */
+  overflow: hidden;  
+
+}
+
 
 .content-wrapper-1 {
   display: flex;
@@ -1516,4 +1557,239 @@ main {
 
 .checkout-item-details {
   align-self: center;
+}
+
+#credit-card-form {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#credit-card-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #444;
+}
+
+#credit-card-form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+#credit-card-form input:focus {
+  border-color: #007BFF;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Total Section */
+#checkout-total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.reviews-section {
+  margin: 20px auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column; /* Make the section content stack vertically */
+  align-items: center; /* Center align all content */
+  width: 80%;
+}
+
+.reviews-section h2 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.review-container {
+  display: flex;
+  width: 100%; /* Adjust to take full section width */
+  justify-content: center; /* Center the review boxes */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  gap: 30px; /* Ensure even spacing between boxes */
+}
+
+.review-box {
+  flex: 1 1 calc(33.33% - 30px); /* Ensure equal widths with responsive behavior */
+  max-width: 300px; /* Limit maximum width */
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px 20px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-box h3 {
+  font-size: 18px;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.review-box p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    margin-right: 0;
+  }
+
+  .nav-account {
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .profile img,
+  .shopping-cart img {
+    height: 16px;
+    width: 16px;
+  }
+
+  .ice-cream img {
+    width: 90vw;
+    margin-top: 40px;
+  }
+
+  .shop-now {
+    margin-top: 60px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .big-text {
+    font-size: 1.4rem;
+  }
+
+  .ice-text {
+    margin-top: 120px;
+    font-size: 3.5rem;
+  }
+
+  .flavors-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .flavors-left,
+  .flavors-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .flavors-right {
+    padding: 20px;
+  }
+
+  .circle-text-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .circle-container {
+    margin: 0 auto 20px;
+  }
+
+  .text-container {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+  }
+
+  .quote-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quote-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .quote-image-container {
+    justify-content: center;
+  }
+
+  .coupon-container {
+    grid-template-columns: 1fr;
+  }
+
+  .order-options {
+    flex-direction: column;
+  }
+
+  .order-option {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-tab {
+    width: 100%;
+    text-align: left;
+  }
+
+  .flavors-grid,
+  .flavors-grid-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .flavor-item,
+  .flavor-item-1 {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
 }

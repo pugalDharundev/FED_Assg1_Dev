@@ -15,6 +15,12 @@
     <script src="home.js"></script>
 
     <nav class="nav-container">
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="flavours.html">Flavor</a></li>
@@ -113,6 +119,11 @@
 
     <script src="menu.js"></script>
     <script src="cart.js"></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        }
+    </script>
 </body>
 
 </html>
