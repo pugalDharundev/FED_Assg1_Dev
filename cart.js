@@ -13,8 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="cart-items"></div>
             <div class="cart-total">Total: $0.00</div>
-            <button class="checkout-btn">Checkout</button>
+            <div class="cart-empty-message" style="display: none;">No items in the cart</div>
+            <button class="checkout-btn" disabled>Checkout</button>
         </div>
+        
     `;
     document.body.appendChild(cartOverlay);
 
@@ -22,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartTotalElement = cartOverlay.querySelector('.cart-total');
     const closeCartBtn = cartOverlay.querySelector('.close-cart');
     const checkoutBtn = cartOverlay.querySelector('.checkout-btn');
+    const emptyCartMessage = cartOverlay.querySelector('.cart-empty-message');
 
     shoppingCartIcon.addEventListener('click', () => {
         renderCartItems();
@@ -43,28 +46,38 @@ document.addEventListener('DOMContentLoaded', () => {
         cartItemsContainer.innerHTML = '';
         let total = 0;
 
-        cartItems.forEach((item, index) => {
-            const price = parseFloat(item.price.replace('$', ''));
-            const itemTotal = price * item.quantity;
-            total += itemTotal;
+        if (cartItems.length === 0) {
+            emptyCartMessage.style.display = 'block';
+            cartTotalElement.style.display = 'none';
+            checkoutBtn.disabled = true;
+        } else {
+            emptyCartMessage.style.display = 'none';
+            cartTotalElement.style.display = 'block';
+            checkoutBtn.disabled = false;
 
-            const cartItemElement = document.createElement('div');
-            cartItemElement.classList.add('cart-item');
-            cartItemElement.innerHTML = `
-                <img src="${item.image}" alt="${item.name}" style="width:100px; height: auto;">
-                <div class="cart-item-details">
-                    <h3>${item.name}</h3>
-                    <p>$${price.toFixed(2)}</p>
-                </div>
-                <div class="cart-item-quantity">
-                    <button class="quantity-btn decrease-qty" data-index="${index}">-</button>
-                    <span>${item.quantity}</span>
-                    <button class="quantity-btn increase-qty" data-index="${index}">+</button>
-                </div>
-                <p>$${itemTotal.toFixed(2)}</p>
-            `;
-            cartItemsContainer.appendChild(cartItemElement);
-        });
+            cartItems.forEach((item, index) => {
+                const price = parseFloat(item.price.replace('$', ''));
+                const itemTotal = price * item.quantity;
+                total += itemTotal;
+
+                const cartItemElement = document.createElement('div');
+                cartItemElement.classList.add('cart-item');
+                cartItemElement.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" style="width:100px; height: auto;">
+                    <div class="cart-item-details">
+                        <h3>${item.name}</h3>
+                        <p>$${price.toFixed(2)}</p>
+                    </div>
+                    <div class="cart-item-quantity">
+                        <button class="quantity-btn decrease-qty" data-index="${index}">-</button>
+                        <span>${item.quantity}</span>
+                        <button class="quantity-btn increase-qty" data-index="${index}">+</button>
+                    </div>
+                    <p>$${itemTotal.toFixed(2)}</p>
+                `;
+                cartItemsContainer.appendChild(cartItemElement);
+            });
+        }
 
         cartTotalElement.textContent = `Total: $${total.toFixed(2)}`;
         addQuantityListeners();
@@ -140,7 +153,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     checkoutBtn.addEventListener('click', () => {
-        window.location.href = 'checkout.html';
+        if (!checkoutBtn.disabled) {
+            window.location.href = 'checkout.html';
+        }
     });
 
     updateCartCount();

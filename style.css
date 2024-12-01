@@ -1,5 +1,5 @@
 /* Reset styles */
-/* Reset styles */
+/* Home Page */
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +41,7 @@ body {
 .nav-links a:hover {
   color: #f4a261;
 }
+
 .logo {
   position: absolute;
   left: 50%;
@@ -85,80 +86,79 @@ body {
   display: inline-block;
 }
    
-   .ice-cream {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    gap: 0.8rem;
-   }
-   
-   .ice-cream img {
-    width: 20vw;
-    height: auto;
-    margin-top: 70px;
-   }
-   
-   .shop-now {
-    margin-top: 450px;
-    border: solid #050101;
-    border-width: 3px;
-    color: #000000;
-    padding: 0.8rem 1.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 0px;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.3s;
-    position:absolute;
-   }
-   
-   .shop-now:hover {
-    background-color: #000000;
-    color: white;
-    transform: scale(1.1);
-   }
-   
-   .shop-now:active {
-    transform: scale(1);
-   }
+.ice-cream {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  gap: 0.8rem;
+ }
+ 
+ .ice-cream img {
+  width: 20vw;
+  height: auto;
+  margin-top: 70px;
+ }
+ 
+ .shop-now {
+  margin-top: 450px;
+  border: solid #050101;
+  border-width: 3px;
+  color: #000000;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  position:absolute;
+ }
+ 
+ .shop-now:hover {
+  background-color: #000000;
+  color: white;
+  transform: scale(1.1);
+ }
+ 
+ .shop-now:active {
+  transform: scale(1);
+ }
 
-   
-   .big-text {
-    position: absolute;
-    font-size: 2rem;
-    font-weight: bold;
-    top: 23vw;
-    color: #ffffff;
-    margin: 2rem 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-   }
-   
-   .ice-text {
-    position: absolute;
-    margin-top: 180px;
-    font-size: 6rem;
-    font-family: "Lilita One";
-    font-weight: bold;
-    color: white;
-    top: 16vw;
-    letter-spacing: 2px;
-   }
+ .big-text {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold;
+  top: 23vw;
+  color: #ffffff;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+ }
+ 
+ .ice-text {
+  position: absolute;
+  margin-top: 180px;
+  font-size: 6rem;
+  font-family: "Lilita One";
+  font-weight: bold;
+  color: white;
+  top: 16vw;
+  letter-spacing: 2px;
+ }
 
-   .flavors-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch; /* Align both sections to stretch to the same height */
-    background-color: white;
-    margin-top: 20px;
-    height: 700px; /* Set a consistent height for the container */
-    overflow: hidden; /* Prevent image from exceeding the container */
-    border: 2px solid #e0e0e0; /* Optional: Add a subtle border for emphasis */
+ .flavors-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Align both sections to stretch to the same height */
+  background-color: white;
+  margin-top: 20px;
+  height: 700px; /* Set a consistent height for the container */
+  overflow: hidden; /* Prevent image from exceeding the container */
+  border: 2px solid #e0e0e0; /* Optional: Add a subtle border for emphasis */
 }
 
 .flavors-left, .flavors-right {
@@ -223,277 +223,12 @@ body {
   transform: scale(1.1);
  }
  
- 
  .our-fla-btn:active {
   transform: scale(1.1);
  }
 
 .flavors-right a:hover {
     background-color: #000000;
-}
-
-/* Overall Section Layout */
-.circle-text-section {
-  display: flex;                     /* Flexbox layout for side-by-side display */
-  align-items: center;               /* Vertically center the items */
-  justify-content: center;           /* Horizontally center the items */
-  margin: 20px;                      /* Add some spacing around the section */
-  height: 40vh;                     /* Optional: Make the container full viewport height for vertical centering */
-}
-
-/* Circle containing the Image */
-.circle-container {
-  width: 250px;                      /* Set the size of the circle */
-  height: 250px;                     /* Set the size of the circle */
-  border-radius: 50%;                /* Makes the container a perfect circle */
-  overflow: hidden;                  /* Hide the overflow part of the image */
-  margin-right: 20px;                /* Space between the circle and the text */
-}
-
-.circle-image {
-  width: 100%;                       /* Make the image fill the container */
-  height: 100%;                      /* Make the image fill the container */
-  object-fit: cover;                 /* Ensure the image covers the circle without distortion */
-}
-
-.circle-container:hover {
-  transform: scale(1.19);            /* Increase the scale when hovering */
-  transition: transform 0.3s ease;   /* Smooth hover effect */
-}
-
-
-/* White Rectangle with Text */
-.text-container {
-  background-color: white;          /* White background for the rectangle */
-  padding: 20px;                     /* Padding inside the rectangle */
-  border: 1px solid #ddd;           /* Optional: Add a border around the rectangle */
-  width: 100%;                       /* Make the rectangle take the remaining space */
-  max-width: 600px;
-  border-radius: 30px;
-  margin-left: 100px;  /* Optional: Set a maximum width for the rectangle */
-}
-
-.text-container h2 {
-  margin-top: 0;                     /* Remove top margin for the heading */
-  font-size: 1.5rem;                 /* Adjust font size for the title */
-  color: #333;                       /* Set a dark color for the title */
-}
-
-.text-container p {
-  font-size: 1rem;                   /* Adjust font size for the paragraph */
-  color: #555;                       /* Set a lighter color for the text */
-  line-height: 1.6;                  /* Line height for readability */
-}
-
-.quote-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 1000px;
-}
-
-.quote-container {
-  flex: 1;
-  margin-right: 2rem;
-}
-
-.quote-container h2 {
-  font-family: 'Lilita One', sans-serif;
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.quote-container p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
-}
-
-.quote-image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.quote-image {
-  max-width: 100%;
-  max-height: 200px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.coupon-card-1 .coupon-card-front {
-    background-color: #C39A6E; /* Light Brown (Chocolate) */
-}
-
-.coupon-card-2 .coupon-card-front {
-    background-color: #F0E1A1; /* Creamy Yellow (Vanilla) */
-}
-
-.coupon-card-3 .coupon-card-front {
-    background-color: #F4A1B2; /* Soft Pink (Strawberry) */
-}
-
-.coupon-card-4 .coupon-card-front {
-    background-color: #A8D5BA; /* Soft Green (Mint) */
-}
-
-.coupon-card-5 .coupon-card-front {
-    background-color: #F7C8A6; /* Light Peach (Mango) */
-}
-
-.coupon-card-6 .coupon-card-front {
-    background-color: #F1D1B5; /* Warm Peach (Peach) */
-}
-
-/* Coupon Card 7 (Coffee) */
-.coupon-card-7 .coupon-card-front {
-  background-color: #D1B899; /* Coffee Brown */
-}
-
-/* Coupon Card 8 (Blueberry) */
-.coupon-card-8 .coupon-card-front {
-  background-color: #A6C8F7; /* Soft Blueberry Blue */
-}
-
-/* Coupon Card 9 (Caramel) */
-.coupon-card-9 .coupon-card-front {
-  background-color: #FAD4A1; /* Caramel Gold */
-}
-
-   .coupon-container {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for horizontal layout */
-    gap: 20px; /* Space between cards */
-    padding: 20px;
-    max-width: 100%; /* Ensure container doesn't overflow */
-    margin: 0 auto; /* Ensure the container is centered */
-}
-
-/* Container for each card to handle flip effect */
-.coupon-card {
-    width: 100%; /* Make the card take full width of its grid cell */
-    height: 350px;
-    perspective: 1000px; /* Set the perspective to allow 3D effect */
-}
-
-.coupon-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d; /* Ensure 3D effect is applied to inner content */
-    transition: transform 0.6s; /* Smooth flip transition */
-}
-
-.coupon-card:hover .coupon-card-inner {
-    transform: rotateY(180deg); /* Flip the card when hovered */
-}
-
-/* Front of the coupon card (Scoops & Shakes) */
-.coupon-card-front, .coupon-card-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Hide the back side when flipped */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.coupon-card-front {
-    background-color: #fff;
-    border: 2px solid #ddd;
-    text-align: center;
-}
-
-.coupon-card-back {
-    background-color: #f5f5f5;
-    border: 2px solid #ddd;
-    transform: rotateY(180deg); /* Flip the back side */
-    text-align: center;
-}
-
-/* Styling for the coupon code and description */
-.coupon-card h3, .coupon-card h4 {
-    font-size: 24px;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.coupon-card p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.chocolate {
-  width: 4.5vw;
-  height: auto;
-  margin: 2vw;
-}
-
-.vanilla {
-  width: 3vw;
-  height: auto;
-  margin: 2vw;
-}
-
-.strawberry {
-  width: 4vw;
-  height: auto;
-  margin: 2vw;
-}
-
-.mintleaves {
-  width: 4vw;
-  height: auto;
-  margin: 2vw;
-}
-
-.mango {
-  width: 4vw;
-  height: auto;
-  margin: 2vw;
-}
-
-.peach{
-  width: 4vw;
-  height: auto;
-  margin: 2vw;
-
-}
-
-.blueberry{
-  width: 4vw;
-  height: auto;
-  margin: 2vw;
-}
-
-.coffee {
-  width: 4vw;
-  height: auto;
-  margin: 2vw;
-}
-
-.caramel {
-  width: 4vw;
-  height: auto;
-  margin: 2vw;
 }
 
 .parallax {
@@ -506,19 +241,8 @@ body {
 
 /* Parallax Background Image */
 #desert {
-  background-image: url("Images/pexels-goumbik-1352296.jpg");  /* Path to the background image */
-  
+  background-image: url("Images/ice-cream_display.jpg");  /* Path to the background image */
   object-fit: cover;
-  
-}
-
-.content {
-  padding-top: 45vh;
-  padding-left: 9vh;
-  text-align: center;
-  position: relative;
-  color: #ddd;
-  font-size: 3vw;
 }
 
 .simply-irresistible-text {
@@ -530,26 +254,6 @@ body {
   border-radius: 10px; /* Smooth corners for the text box */
   display: inline-block; /* Ensures proper text box alignment */
 }
-
-.top-image {
-  position: relative;
-  height: 150px; /* Adjust height as needed */
-}
-
-.top-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the area */
-  object-position: top; /* Ensures the top of the image is visible */
-}
-
-/* Resetting some styles */
-body, ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 /* Flavors Section */
 .flavors-section {
   background-color: rgb(139, 235, 200); /* Light green background */
@@ -659,116 +363,7 @@ p {
   margin-top: 4vw;
 }
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.nav-bar {
-  font-size: 1.5rem;
-  font-family: 'Lilita One', cursive;
-  font-weight: 700;
-  color: #000000;
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-}
-
-.nav-bar a {
-  text-decoration: none;
-  color: #000;
-}
-
-/* Login Container */
-.login-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-  padding-top: 60px; /* Push below the navbar */
-}
-
-/* Login Form */
-.login-form {
-  background-color: #fff;
-  padding: 30px 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
-}
-
-.login-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.form-input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.form-button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 700;
-  transition: background-color 0.3s;
-}
-
-.form-button:hover {
-  background-color: #555;
-}
-
-.form-links {
-  margin-top: 15px;
-  font-size: 0.9rem;
-}
-
-.link {
-  text-decoration: none;
-  color: #007BFF;
-  transition: color 0.3s;
-}
-
-.link:hover {
-  color: #0056b3;
-}
-
-.order-online-image {
-  height: auto;
-  width: 100%;
-}
-
-img + p {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 10px;
-
-
-}
-
-.alignment-container {
-  max-width: 90%; 
-  margin: 0 auto;
-  padding-left: 2rem;
-}
-
-/* Order Section Styles */
+/*Menu Section*/
 .order-section {
   padding: 40px 0 40px 40px;
   max-width: 1000px;
@@ -914,13 +509,6 @@ img + p {
   margin: 0 auto;
 }
 
-.top-flavour-1 {
-  padding: 2rem;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 .flavors-grid-1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -953,7 +541,6 @@ img + p {
   overflow: hidden;  
 
 }
-
 
 .content-wrapper-1 {
   display: flex;
@@ -991,10 +578,410 @@ img + p {
   margin-left: 2rem;
 }
 
-/* Footer Styling */
-/* Footer Styling */
 
-/* Footer Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* About us Section */
+.circle-text-section {
+  display: flex;                     /* Flexbox layout for side-by-side display */
+  align-items: center;               /* Vertically center the items */
+  justify-content: center;           /* Horizontally center the items */
+  margin: 20px;                      /* Add some spacing around the section */
+  height: 40vh;                     /* Optional: Make the container full viewport height for vertical centering */
+}
+
+/* Circle containing the Image */
+.circle-container {
+  width: 250px;                      /* Set the size of the circle */
+  height: 250px;                     /* Set the size of the circle */
+  border-radius: 50%;                /* Makes the container a perfect circle */
+  overflow: hidden;                  /* Hide the overflow part of the image */
+  margin-right: 20px;                /* Space between the circle and the text */
+}
+
+.circle-image {
+  width: 100%;                       /* Make the image fill the container */
+  height: 100%;                      /* Make the image fill the container */
+  object-fit: cover;                 /* Ensure the image covers the circle without distortion */
+}
+
+.circle-container:hover {
+  transform: scale(1.19);            /* Increase the scale when hovering */
+  transition: transform 0.3s ease;   /* Smooth hover effect */
+}
+
+
+/* White Rectangle with Text */
+.text-container {
+  background-color: white;          /* White background for the rectangle */
+  padding: 20px;                     /* Padding inside the rectangle */
+  border: 1px solid #ddd;           /* Optional: Add a border around the rectangle */
+  width: 100%;                       /* Make the rectangle take the remaining space */
+  max-width: 600px;
+  border-radius: 30px;
+  margin-left: 100px;  /* Optional: Set a maximum width for the rectangle */
+}
+
+.text-container h2 {
+  margin-top: 0;                     /* Remove top margin for the heading */
+  font-size: 1.5rem;                 /* Adjust font size for the title */
+  color: #333;                       /* Set a dark color for the title */
+}
+
+.text-container p {
+  font-size: 1rem;                   /* Adjust font size for the paragraph */
+  color: #555;                       /* Set a lighter color for the text */
+  line-height: 1.6;                  /* Line height for readability */
+}
+
+.quote-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1000px;
+}
+
+.quote-container {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.quote-container h2 {
+  font-family: 'Lilita One', sans-serif;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.quote-container p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.quote-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-image {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/*Coupon Section*/
+.coupon-card-1 .coupon-card-front {
+    background-color: #C39A6E; /* Light Brown (Chocolate) */
+}
+
+.coupon-card-2 .coupon-card-front {
+    background-color: #F0E1A1; /* Creamy Yellow (Vanilla) */
+}
+
+.coupon-card-3 .coupon-card-front {
+    background-color: #F4A1B2; /* Soft Pink (Strawberry) */
+}
+
+.coupon-card-4 .coupon-card-front {
+    background-color: #A8D5BA; /* Soft Green (Mint) */
+}
+
+.coupon-card-5 .coupon-card-front {
+    background-color: #F7C8A6; /* Light Peach (Mango) */
+}
+
+.coupon-card-6 .coupon-card-front {
+    background-color: #F1D1B5; /* Warm Peach (Peach) */
+}
+
+/* Coupon Card 7 (Coffee) */
+.coupon-card-7 .coupon-card-front {
+  background-color: #D1B899; /* Coffee Brown */
+}
+
+/* Coupon Card 8 (Blueberry) */
+.coupon-card-8 .coupon-card-front {
+  background-color: #A6C8F7; /* Soft Blueberry Blue */
+}
+
+/* Coupon Card 9 (Caramel) */
+.coupon-card-9 .coupon-card-front {
+  background-color: #FAD4A1; /* Caramel Gold */
+}
+
+.coupon-container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for horizontal layout */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  max-width: 100%; /* Ensure container doesn't overflow */
+  margin: 0 auto; /* Ensure the container is centered */
+}
+
+/* Container for each card to handle flip effect */
+.coupon-card {
+    width: 100%; /* Make the card take full width of its grid cell */
+    height: 350px;
+    perspective: 1000px; /* Set the perspective to allow 3D effect */
+}
+
+.coupon-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Ensure 3D effect is applied to inner content */
+    transition: transform 0.6s; /* Smooth flip transition */
+}
+
+.coupon-card:hover .coupon-card-inner {
+    transform: rotateY(180deg); /* Flip the card when hovered */
+}
+
+/* Front of the coupon card (Scoops & Shakes) */
+.coupon-card-front, .coupon-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side when flipped */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coupon-card-front {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+.coupon-card-back {
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
+    transform: rotateY(180deg); /* Flip the back side */
+    text-align: center;
+}
+
+/* Styling for the coupon code and description */
+.coupon-card h3, .coupon-card h4 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.coupon-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.chocolate {
+  width: 4.5vw;
+  height: auto;
+  margin: 2vw;
+}
+
+.vanilla {
+  width: 3vw;
+  height: auto;
+  margin: 2vw;
+}
+
+.strawberry {
+  width: 4vw;
+  height: auto;
+  margin: 2vw;
+}
+
+.mintleaves {
+  width: 4vw;
+  height: auto;
+  margin: 2vw;
+}
+
+.mango {
+  width: 4vw;
+  height: auto;
+  margin: 2vw;
+}
+
+.peach{
+  width: 4vw;
+  height: auto;
+  margin: 2vw;
+
+}
+
+.blueberry{
+  width: 4vw;
+  height: auto;
+  margin: 2vw;
+}
+
+.coffee {
+  width: 4vw;
+  height: auto;
+  margin: 2vw;
+}
+
+.caramel {
+  width: 4vw;
+  height: auto;
+  margin: 2vw;
+}
+
+/*Login Section*/
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding-top: 60px; /* Push below the navbar */
+}
+
+
+.login-form {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: #555;
+}
+
+.form-links {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+
+.content {
+  padding-top: 45vh;
+  padding-left: 9vh;
+  text-align: center;
+  position: relative;
+  color: #ddd;
+  font-size: 3vw;
+}
+
+
+.top-image {
+  position: relative;
+  height: 150px; /* Adjust height as needed */
+}
+
+.top-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area */
+  object-position: top; /* Ensures the top of the image is visible */
+}
+
+
+
+/*Login Section*/
+.nav-bar {
+  font-size: 1.5rem;
+  font-family: 'Lilita One', cursive;
+  padding-right: 88%;
+  font-weight: 700;
+  color: #000000;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Login Container */
+
+.link {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #0056b3;
+}
+
+.order-online-image {
+  height: auto;
+  width: 100%;
+}
+
+img + p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 10px;
+
+
+}
+
+.alignment-container {
+  max-width: 90%; 
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
+/* Footer Section */
 .footer {
   background-color: #000;
   color: #fff;
@@ -1080,6 +1067,7 @@ img + p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
 }
 
+/*Add to Cart Section*/
 .add-to-cart-btn {
   display: block;
   margin: 10px auto 0;
@@ -1128,12 +1116,7 @@ img + p {
   align-items: center;     /* Centers content vertically (optional) */
 }
 
-/* Responsive Design */
-
-/* Responsive design for smaller screens */
-   
-
-   /* Cart Overlay Styles */
+ /* Cart Overlay Styles */
 .cart-overlay {
   position: fixed;
   top: 0;
@@ -1240,7 +1223,7 @@ main {
   gap: 2rem;
 }
 
-/* Checkout Items */
+/* Checkout Section */
 .checkout-items {
   background-color: #fff;
   padding: 1.5rem;
@@ -1427,6 +1410,7 @@ main {
   margin-top: 15px;
 }
 
+/*Review Section*/
 .reviews-section {
   margin: 20px auto;
   text-align: center;
@@ -1476,6 +1460,7 @@ main {
   line-height: 1.6;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .nav-container {
       padding: 0.8rem;
@@ -1614,8 +1599,6 @@ main {
   }
 }
 
-
-
 /* Additional responsive styles for other sections */
 @media (max-width: 480px) {
   .nav-container {
@@ -1647,6 +1630,7 @@ main {
   .ice-cream img {
     width: 70vw;
     margin-top: 40px;
+    position:sticky
   }
   .shop-now {
     margin-top: 200px;

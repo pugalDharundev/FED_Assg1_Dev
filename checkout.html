@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,8 +13,6 @@
         <h1>Checkout</h1>
         <p>Review your items before completing your purchase.</p>
     </header>
-
-    <main>
         <div class="checkout-container">
             <!-- Items section -->
             <div class="checkout-items">
@@ -26,7 +25,7 @@
                 <input type="text" id = "input-discount">
                 <button id = "submit-btn" >Submit</button>
                 <h3>Credit Card Information</h3>
-        <form id="credit-card-form">
+        <form id="credit-card-form"></form>
             <label for="card-number">Card Number:</label>
             <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
     
@@ -39,7 +38,7 @@
                 <button id="place-order-btn">Place Order</button>
             </div>
         </div>
-    </main>
+
     <script src="checkout.js"></script>
     <script>
         // Add any necessary JavaScript for responsiveness

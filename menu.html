@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoops & Shakes - Order Online</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +51,7 @@
     </nav>
     <img src="Images/multiple_ice-cream_scoops.webp" alt="" class="order-online-image">
     <div class="alignment-container">
-        <h1 class="order-title">ORDER ONLINE</h1>
+        <p class="order-title">ORDER ONLINE</p>
         <p class="order-description">You can order online! Browse our menu items and choose what you'd like to order from us.</p>
     
         <div class="order-status">
@@ -80,7 +81,6 @@
         <div class="menu-tabs">
             <button class="menu-tab active" onclick="switchTab(0)">ICE CREAM FLAVORS</button>
             <button class="menu-tab" onclick="switchTab(1)">DAIRY FREE FLAVORS</button>
-            <button class="menu-tab" onclick="switchTab(2)">TOP FLAVOURS</button>
         </div>
     
         <h2 class="flavors-heading">FLAVORS</h2>
@@ -234,83 +234,6 @@
             </div>
         </div>
     </section>
-
-    <section class="top-flavour-1">
-        <h2 class="heading-1">Top Flavours</h2>
-            <div class="flavors-grid-1">
-    
-                <!-- Flavor 7-->
-                <div class="flavor-item-1">
-                    <div class="content-wrapper-1">
-                        <h3 class="flavor-title-1">Velvet Mango</h3>
-                        <p class="description-1">Rich mango with tropical sweetness.</p>
-                        <p class="price-1">$8.50</p>
-                        <button class="add-to-cart-btn">Add to Cart</button>
-                    </div>
-                    <img src="images/velvet.mango.png" alt="Velvet Mango" class="flavor-image-1">
-                </div>
-                <!-- Flavor 8 -->
-                <div class="flavor-item-1">
-                    <div class="content-wrapper-1">
-                        <h3 class="flavor-title-1">Tiramisu Spiral</h3>
-                        <p class="description-1">Whipped cream swirled with coffee and cocoa.</p>
-                        <p class="price-1">$12.50</p>
-                        <button class="add-to-cart-btn">Add to Cart</button>
-                    </div>
-                    <img src="images/tiramisu.png" alt="Tiramisu" class="flavor-image-1">
-                </div>
-                <!-- Flavor 9 -->
-                <div class="flavor-item-1">
-                    <div class="content-wrapper-1">
-                        <h3 class="flavor-title-1">Mango Sorbet</h3>
-                        <p class="description-1">Refreshing ripped tropical mango flavour</p>
-                        <p class="price-1">$14.50</p>
-                        <button class="add-to-cart-btn">Add to Cart</button>
-                    </div>
-                    <img src="images/mango.sorbet.png" alt="Mango Sorbet" class="flavor-image-1">
-                </div>
-            </div>
-
-    </section>
-
-    <section class="top-flavour-1">
-        <div class="flavors-grid-1">
-            <!-- Flavor 1 -->
-            <div class="flavor-item-1">
-                <div class="content-wrapper-1">
-                    <h3 class="flavor-title-1">Cookies & Cream</h3>
-                    <p class="description-1">Creamy vanilla with crunchy chocolate cookies.</p>
-                    <p class="price-1">$9.00</p>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-
-                </div>
-                <img src="images/oreo.png" alt="Oreo" class="flavor-image-1">
-            </div>
-            <!-- Flavor 2 -->
-            <div class="flavor-item-1">
-                <div class="content-wrapper-1">
-                    <h3 class="flavor-title-1">Chocolate Fondue</h3>
-                    <p class="description-1">Melted chocolate with brownie chunks and fudge swirls.</p>
-                    <p class="price-1">$10.00</p>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </div>
-                <img src="images/chocolate-ice-cream.png" alt="Chocolate & Sea Salt" class="flavor-image-1">
-            </div>
-            <!-- Flavor 3 -->
-            <div class="flavor-item-1">
-                <div class="content-wrapper-1">
-                    <h3 class="flavor-title-1">Blueberry Fudge</h3>
-                    <p class="description-1">Blueberry with sweet, swirled ribbons.</p>
-                    <p class="price-1">$9.50</p>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                    
-                </div>
-                <img src="images/blueberry-cream.png" alt="Vanilla Strawberry" class="flavor-image-1">
-            </div>
-        </div>
-    </section>
-
-
     <footer class="footer">
         <div class="footer-container">
           <!-- Address Section -->
@@ -355,9 +278,10 @@
               <img src="Images/twitter.png" alt="Twitter Icon">
             </a>
             <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-              <img src="Images/Vector-Instagram-icon-PNG.png" alt="Instagram Icon">
+              <img src="Images/instagram.png" alt="Instagram Icon">
             </a>
           </div>
+    </footer>
     <script src="menu.js"></script>
     <script src="cart.js"></script>
     <script src="filter.js"></script>
@@ -367,6 +291,6 @@
             document.querySelector('.nav-links').classList.toggle('show');
         }
     </script>
-
 </body>
+
 </html>
