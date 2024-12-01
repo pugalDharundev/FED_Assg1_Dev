@@ -334,7 +334,6 @@ body {
   border-radius: 50%;
 }
 
-
 .flavor-item h3 {
   margin-top: 10px; /* Add smaller top margin */
   margin-bottom: 10px;
@@ -578,7 +577,6 @@ p {
   margin-left: 2rem;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -613,7 +611,6 @@ p {
   transform: scale(1.19);            /* Increase the scale when hovering */
   transition: transform 0.3s ease;   /* Smooth hover effect */
 }
-
 
 /* White Rectangle with Text */
 .text-container {
@@ -1468,6 +1465,12 @@ main {
       align-items: flex-start;
   }
 
+  .ice-cream {
+    margin-top: 80px; /* Adjust this value to move the ice cream section down */
+    position: relative; /* Add this to make the ice cream section positioned relative */
+    z-index: 0; /* Add this to make the ice cream section appear behind the text */
+  }
+
   .nav-links {
       display: none;
       flex-direction: column;
@@ -1630,7 +1633,6 @@ main {
   .ice-cream img {
     width: 70vw;
     margin-top: 40px;
-    position:sticky
   }
   .shop-now {
     margin-top: 200px;
@@ -1639,10 +1641,10 @@ main {
   }
   .big-text {
     font-size: 1.4rem;
-    margin-top: 250px;
+    margin-top: 150px;
   }
   .ice-text {
-    margin-top: 300px;
+    margin-top: 200px;
     font-size: 3.5rem;
   }
 
