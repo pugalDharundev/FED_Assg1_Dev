@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkoutTotalElement = document.getElementById('checkout-total');
     const placeOrderBtn = document.getElementById('place-order-btn');
     const discountButton = document.getElementById('submit-btn');
+    const closeCheckoutButton = document.getElementById('close-checkout');
 
     // Load cart items from localStorage
     function loadCartItems() {
@@ -172,6 +173,10 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Thank you for your order!');
         localStorage.removeItem('cartItems'); // Clear cart
         window.location.href = 'index.html'; // Redirect to homepage or confirmation page
+    });
+
+    closeCheckoutButton.addEventListener('click', () => {
+        window.location.href = 'index.html';
     });
 
     // Load cart items on page load
